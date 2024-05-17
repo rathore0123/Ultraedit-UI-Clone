@@ -1,0 +1,900 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+nav {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav nav-left {
+    height: 6rem;
+    width: 20.3rem;
+}
+
+header nav nav-left img {
+    height: 6rem;
+    width: 18.3rem;
+}
+
+header nav nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav nav-right>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.6rem;
+}
+
+
+header nav nav-right ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: 500;
+}
+
+ion-icon {
+    display: block;
+    height: 12px;
+    padding-left: 3px;
+    font-weight: 900;
+}
+
+.menu {
+    display: none;
+}
+
+.mobile-menu-bar {
+    display: none;
+}
+
+main {
+    padding: 0  0 5rem 0;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 5rem 0;
+    margin: 0 auto;
+}
+
+.section1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.section1 div .span1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 4.8rem;
+}
+
+.section1 div .span1 img {
+    padding-top: 1rem
+}
+
+.section1 div .span2 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 2rem;
+    max-width: 96rem;
+}
+
+.section1 div .span3 button {
+    height: 6rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: #00B6D1;
+    border: none;
+}
+
+.section1 div .span3 button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.section2 {
+    padding: 3rem 0 5rem 0;
+    width: 60vw;
+    margin: auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section2 .download {
+    max-width: 52rem;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.section2 .download .first {
+    font-size: 2.4rem;
+}
+
+.section2 .download .second {
+    font-size: 1.4rem;
+}
+
+.section2 .download-version {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.section2 .download-version .first {
+    font-size: 2rem;
+}
+
+.section2 .download-version .second {
+    font-size: 1.2rem;
+}
+
+
+.section2 .download-version span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section2 .download-version span button {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.section2 .download-version span button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.btn1 {
+    background-color: #00B6D1;
+}
+
+.btn2 {
+    background-color: #00d084;
+}
+
+/* footer */
+
+.foot-first {
+    padding: 2rem 0;
+    background-color: #222222;
+}
+
+.foot-first>.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 0;
+    margin: 0 1rem;
+}
+
+.foot-first .div1 .sub-div {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+.foot-first .div1 .sub-div .content {
+    display: flex;
+    max-width: 45rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.foot-first .div1 .sub-div .content .h3 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+.foot-first .div1 .sub-div .content p {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.foot-first .div1 .sub-div .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    border-radius: .5rem;
+}
+
+.foot-first .div1 .sub-div .card p {
+    color: #00B6D1;
+    font-size: 2.4rem;
+}
+
+.foot-first .div1 .sub-div .card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.foot-first .div1 .sub-div .card form label {
+    font-size: 1.4rem;
+    background-color: #f9f9f9;
+}
+
+.foot-first .div1 .sub-div .card form input {
+    width: 30rem;
+    height: 5rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 207, 207);
+}
+
+
+.foot-first .div1 .sub-div .card form button {
+    width: 30rem;
+    height: 5rem;
+    background-color: #00B6D1;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+}
+
+.foot-first .div1 .sub-div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-first .div1 .sub-div1 .h3 {
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+.foot-first .div1 .sub-div1 p {
+    max-width: 68vw;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+/* second half of footer */
+
+.foot-second {
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foot-second>.div2 {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 5rem;
+    padding-bottom: 7rem;
+}
+
+.foot-second>.div2>.div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div1 h2 {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.foot-second>.div2>.div1 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div1 ul li {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.foot-second>.div2>.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div2 h2 {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.foot-second>.div2>.div2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div2 ul li {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.foot-second>.div2>.div3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div3 h2 {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.foot-second>.div2>.div3 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div3 ul li {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.foot-second>.div2>.div4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-second>.div2>.div4 h2 {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.foot-second>.div2>.div4>p {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.foot-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.foot-div {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.foot-div foot-left {
+    height: 6rem;
+    width: 20.3rem;
+}
+
+.foot-div foot-left img {
+    height: 6rem;
+    width: 18.3rem;
+}
+
+.foot-div foot-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-div foot-right>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 2.4rem;
+}
+
+.foot-div foot-right ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.foot-end {
+    width: 80vw;
+}
+
+
+
+@media screen and (min-width:1600px) {
+    html {
+        font-size: 70%;
+    }
+
+}
+
+@media screen and (min-width:1900px) {
+    html {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (min-width:2200px) {
+    html {
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (min-width:2500px) {
+    html {
+        font-size: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width:1095px) {
+    .section1 div .span1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 4rem;
+    }
+
+    .section1 div .span2 {
+        text-align: center;
+        font-size: 2.2rem;
+        padding: 0 5rem;
+    }
+
+}
+
+
+@media screen and (max-width:1023px) {
+    .section2 {
+        padding: 3rem 0 5rem 0;
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        gap: 2rem 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section2 .download {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        padding: 2rem 0;
+        margin: 2rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .section2 .download-version {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+
+
+
+
+    .foot-second>.div2 {
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 5rem;
+        padding-bottom: 7rem;
+    }
+
+}
+
+
+@media screen and (max-width:980px) {
+    header nav nav-right>ul {
+        list-style: none;
+        display: none;
+        align-items: center;
+        gap: 30px;
+        font-size: 1.6rem;
+    }
+
+    .menu {
+        display: block;
+        position: relative;
+        top: -18vh;
+        right: -91vw;
+    }
+    
+    .menu ion-icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2rem;
+    }
+    
+    .mobile-menu-bar ul {
+        list-style: none;
+        display: none;
+        position: relative;
+        right: 90.9vw;
+        top: 1rem;
+        width: 85vw;
+        align-items: center;
+        padding: 3rem 5rem 5rem 5rem;
+        background-color: #ffffff;
+        border-top: 3px solid #00B6D1;
+    }
+
+    /* .menu:hover .mobile-menu-bar ul{
+        display: block;
+    } */
+
+    .mobile-menu-bar ul li{
+        margin-bottom: 1rem;
+    }
+
+
+
+    .mobile-menu-bar ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-family: 500;
+    }
+
+    ion-icon {
+        display: block;
+        height: 12px;
+        padding-left: 3px;
+        font-weight: 900;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .section1 div .span1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 4rem;
+    }
+
+    .section1 div .span2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0 5rem;
+    }
+
+    .section2 {
+        padding: 3rem 0 5rem 0;
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        gap: 2rem 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    .section2 .download {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        padding: 2rem 0;
+        margin: 2rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .section2 .download-version {
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+
+    .foot-first .div1 .sub-div {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        padding-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .foot-second>.div2 {
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 5rem;
+        padding-bottom: 7rem;
+    }
+
+    .foot-div {
+        width: 62vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .foot-div foot-right>ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 1.4rem;
+    }
+
+    .foot-end {
+        width: 62vw;
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 560px) {
+    .foot-second>.div2 {
+        width: 60vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 5rem;
+        padding-bottom: 7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .foot-first .div1 .sub-div .card {
+        width: 31rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        gap: 2rem;
+        padding: 4rem 2rem;
+        border-radius: .5rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 319px) {
+    .section1 div .span1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 3.5rem;
+    }
+
+    .section1 div .span2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0 2rem;
+    }
+
+
+    .section1 div .span3 button {
+        height: 6rem;
+        width: 25rem;
+        border-radius: .5rem;
+        background-color: #00B6D1;
+        border: none;
+    }
+
+    .section2 {
+        padding: 3rem 0 5rem 0;
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        gap: 2rem 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    .section2 .download {
+        width: 20rem;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        padding: 2rem 0;
+        margin: 2rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .section2 .download-version {
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+
+    .section2 .download-version span {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .foot-first .div1 .sub-div .card {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        gap: 2rem;
+        padding: 4rem 2rem;
+        border-radius: .5rem;
+    }
+
+    .div1 .sub-div .card p {
+        color: #00B6D1;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .foot-first .div1 .sub-div .card form input {
+        width: 23rem;
+        height: 5rem;
+        padding: 0 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid rgb(223, 207, 207);
+    }
+
+
+    .foot-first .div1 .sub-div .card form button {
+        width: 23rem;
+        height: 5rem;
+        background-color: #00B6D1;
+        color: #ffffff;
+        border: none;
+        font-weight: 700;
+        font-size: 1.6rem;
+        border-radius: 0.5rem;
+    }
+
+
+    .foot-div-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .foot-div foot-right>ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 2.4rem;
+    }
+
+}
